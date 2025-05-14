@@ -128,7 +128,7 @@
   }
   .hover-overlay p{
     font-size: larger;
-    font-family: cursive;
+    font-family: ui-monospace;
     margin-bottom: 3%;
     width: 50%;
   }

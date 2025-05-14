@@ -40,7 +40,7 @@
   margin-bottom: 15px;
   line-height: 1.6;
   font-weight: 600;
-  font-family: cursive;
+  font-family: ui-monospace;
 }
 
 .about-text span{
@@ -112,7 +112,7 @@
 @media (max-width: 991px) {
  .about-socials {
    width: fit-content;
-   padding-left: 37%;
+   padding-left: 23%;
  }
  .about-socials i {
   font-size: 40px;
@@ -121,10 +121,13 @@
 
 @media (max-width: 491px) {
   .about-img .contact-title {
-      font-size: 63px;
+      font-size: 60px;
       padding-bottom: 5%;
   }
   .about-text p {
     font-size: 15.3px;
   }
+  .about-socials i {
+  font-size: 30px;
+ }
 }
