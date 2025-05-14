@@ -2,10 +2,8 @@
 @import './Style/global.css';
 .body{
     background-color: grey;
-        overflow-x: hidden; /* إخفاء التمرير الأفقي */
+    overflow-x: hidden; 
 }
-/* App.css */
-
 .container {
     display: flex;
     height: 100vh;

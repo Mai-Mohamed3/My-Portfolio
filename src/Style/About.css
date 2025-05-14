@@ -40,7 +40,6 @@
   margin-bottom: 15px;
   line-height: 1.6;
   font-weight: 600;
-  font-family: ui-monospace;
 }
 
 .about-text span{
@@ -121,7 +120,7 @@
 
 @media (max-width: 491px) {
   .about-img .contact-title {
-      font-size: 60px;
+      font-size: 55px;
       padding-bottom: 5%;
   }
   .about-text p {

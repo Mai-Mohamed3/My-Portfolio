@@ -87,7 +87,6 @@
   transition: 0.3s;
   font-weight: 600;
   font-size: 25px;
-  font-family: 'Great Vibes', cursive;
   line-height: 2;
   transform: translateY(50px); /* بداية العنصر يكون مرفوعًا قليلًا */
   animation: slideIn 5s forwards;
@@ -154,8 +153,6 @@
   padding-left: 15%;
   margin-top: auto;
   font-weight: 600;
-  font-family: 'Great Vibes', cursive;
-
 }
 
 .footer a{

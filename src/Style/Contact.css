@@ -18,7 +18,6 @@
   -webkit-text-stroke: 1px #cc23b0;
 }
 .contact-cta{
-  font-family: 'Great Vibes', cursive;
   font-size: 32px;
   color: #082150;
   margin: 0;
@@ -32,7 +31,6 @@
   flex-direction: column;
   gap: 50px;
   margin-top: 40px;
-  font-family:ui-monospace;
 }
 .contact-info p {
   color: #333;
@@ -103,7 +101,6 @@
   box-shadow: 0 20px 40px rgb(174, 194, 230); /* ظل رمادي ناعم */
   z-index: 1000;
   text-align: center;
-  font-family:ui-monospace;
   font-weight: bolder;
 }
 
@@ -197,7 +194,7 @@
 
 @media (max-width: 730px) {
   .contact-container .contact-title {
-      font-size: 58px;
+      font-size: 55px;
       padding-bottom: 5%;
   }
   .contact-container {
@@ -211,7 +208,7 @@
     margin-top: 0;
   }
   .contact-info p {
-    font-size: 24px;
+    font-size: 23px;
 }
 .contact-form {
     margin-bottom: 10%;

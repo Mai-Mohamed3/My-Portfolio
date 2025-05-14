@@ -23,7 +23,7 @@ export default function App() {
         {activeSection === "Skills" && <Skills />}
         {activeSection === "Education" && <Education />}
         {activeSection === "Websites" && <Websites />}
-        {activeSection === "Contact Me" && <Contact />}
+        {activeSection === "Contact" && <Contact />}
       </main>
     </div>
   );

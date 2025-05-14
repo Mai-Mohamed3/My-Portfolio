@@ -5,7 +5,7 @@ import logo from '../assets/Images/logo6.png';
 function Sidebar({ active, setActive }) {
   const [isOpen, setIsOpen] = useState(false); // لإظهار/إخفاء السايدبار
 
-  const links = ["home", "about", "Experience", "Skills", "Education", "Websites", "Contact Me"];
+  const links = ["home", "about", "Experience", "Skills", "Education", "Websites", "Contact"];
   const icons = ["fas fa-home", "fas fa-user", "fas fa-briefcase", "fas fa-cogs", "fas fa-graduation-cap", "fas fa-laptop-code", "fas fa-envelope"];
 
   return (
