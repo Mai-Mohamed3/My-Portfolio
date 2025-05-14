@@ -160,7 +160,7 @@ const handlePrev = () => {
 
     const interval = setInterval(() => {
       handleNext();
-    }, 115000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [isHovered]); // عندما يكون mouseHovered يتغير، يتوقف التمرير التلقائي

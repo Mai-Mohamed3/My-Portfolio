@@ -3,7 +3,6 @@
 }
 .website-text p{
   font-size: 25px;
-  font-family: cursive;
   padding: 0 5%;
   font-size: 24px;
   color: #333;
@@ -195,7 +194,15 @@
     font-size: 17px;
 }
   .website-socials {
-    padding-left: 33%;
+    padding-left: 28%;
+}
+.hover-overlay p
+ {
+  font-size: medium;
+    width: 73%;
+}
+.website-socials i{
+  font-size: 30px;
 }
 
 }

@@ -58,8 +58,7 @@ const Contact = () => {
         <div className="contact-info">
           <p className="slide-left delay-3"><strong>Phone:</strong> +2 01143607452</p>
           <p className="slide-left delay-4"><strong>Email:</strong> mai.mo.alii3@gmail.com</p>
-          <p className="slide-left delay-5"><strong>Website:</strong> yoursite.com</p>
-          <p className="slide-left delay-6"><strong>Address:</strong> Cairo, Egypt</p>
+          <p className="slide-left delay-5"><strong>Address:</strong> Cairo, Egypt</p>
           <div className="socials about-socials">
             <a href="mailto:mai.mo.alii3.com" className="icon1" target="_blank" rel="noopener noreferrer">
               <i className="fas fa-envelope icon1"></i>
