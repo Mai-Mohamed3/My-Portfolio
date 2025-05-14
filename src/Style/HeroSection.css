@@ -1,0 +1,323 @@
+.main-content {
+  margin-left: 25%;
+  padding: 0px ;
+  background-image: url('../assets/Images/bg.png'); 
+  background-color: rgba(128, 128, 128, 0.288); 
+  background-repeat: no-repeat; 
+  min-height: 100vh;
+  width: 100%;
+}
+.digital-section {
+  padding: 80px 0;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image-section {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  border-radius: 10px;
+}
+
+.laptop {
+  width: 482px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 20px 40px rgb(226, 223, 223); /* ظل رمادي ناعم */
+}
+
+.tablet {
+  width: 280px;
+  position: absolute;
+  top: 175px;
+  left: 20px;
+  z-index: 2;
+  box-shadow: 0 20px 40px rgb(223, 220, 220); /* ظل رمادي ناعم */
+}
+
+.mobile {
+  width: 180px;
+  position: absolute;
+  bottom: -65px;
+  left: 190px;
+  z-index: 3;
+}
+
+.person{
+  width: 550px;
+  position: relative;
+  border-radius: 30%;  
+}
+
+.text-section {
+  width: 45%;
+  text-align: left;
+}
+
+.text-section h2 {
+  font-size: 61px;
+  color: #082150;
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-family: 'Great Vibes', cursive;
+}
+.highlight-letter {
+  font-size: 48px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px #082150; /* بوردر حوالين الحرف */
+  font-family: 'BelanieLovely', cursive;
+  display: inline-block;
+  margin: 0 2px;
+  transition: transform 0.3s ease;
+}
+
+.highlight-letter:hover {
+  transform: scale(1.2);
+  -webkit-text-stroke: 1px #cc23b0;
+}
+
+
+.text-section h2 span {
+  color: #ffffff;
+}
+
+.text-section p {
+  color: #686767;
+  font-size: 26px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font-family: 'Great Vibes', cursive;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 14px 37px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  transform: translatex(40px);
+  animation: slideDown 1s ease forwards;
+  font-family: 'Great Vibes', cursive;
+}
+
+.btn.white {
+  background-color: #082150;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn.red {
+  background-color: #082150;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  background-color: #07358a;
+}
+
+/* حركة الصور من أسفل إلى أعلى */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* تطبيق الأنيميشن على الصور */
+.img {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideUp 1s ease forwards;
+}
+
+.laptop {
+  animation: slideUp 1s ease forwards;
+  animation-delay: 0s; /* ابتداءً من الآن */
+}
+
+.tablet {
+  animation-delay: 0.5s;
+}
+
+.mobile {
+  animation-delay: 1s;
+}
+
+
+/* التأخير على الزر */
+.delay-6 {
+  animation-delay: 2.5s; /* تأخير زر العرض */
+}
+/* تأخير الأنيميشن حسب ترتيب الصور */
+.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.delay-2 {
+  animation-delay: 1s;
+}
+
+.delay-3 {
+  animation-delay: 1.5s;
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-section h2.slide-down {
+  animation: slideDown 1s ease forwards;
+  opacity: 0;
+}
+@keyframes slideRightToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.text-section p.slide-left {
+  animation: slideRightToLeft 1s ease forwards;
+  opacity: 0;
+}
+@media (max-width: 1024px) {
+  .main-content {
+      width: 100%;
+      margin: 0;
+  }
+  .text-section {
+    margin-top: 0%;
+}
+.content-wrapper {
+  flex-direction: column;
+}
+.image-section {
+  border-radius: 50%;
+  padding: 9% 0;
+   width: 95%;
+
+}
+.text-section {
+    width: 100%;
+    text-align: left;
+}
+  .text-section h2 {
+      font-size: 61px;
+      width: 70%;
+  }
+  .text-section p {
+    font-size: 42px;
+  }
+  .btn {
+    font-size: 24px;
+  }
+.digital-section {
+    padding: 0;
+}
+.laptop {
+    width: 682px;
+}
+.tablet {
+    width: 391px;
+    top: 272px;
+    left: 220px;
+}
+.mobile {
+    width: 249px;
+    bottom: -56px;
+    left: 423px;
+  }
+
+.highlight-letter {
+    font-size: 70px;
+}
+}
+@media (max-width: 765px) {
+  .main-content {
+      width: 100%;
+      margin: 0;
+  }
+  .text-section {
+    margin-top: 13%;
+}
+.content-wrapper {
+  flex-direction: column;
+}
+.image-section {
+  border-radius: 50%;
+  padding: 9% 0;
+}
+.text-section {
+    width: 100%;
+    text-align: left;
+}
+.text-section h2 {
+    font-size: 48px;
+}
+.text-section p {
+    font-size: 22px;
+}
+.highlight-letter {
+    font-size: 48px;
+  }
+.digital-section {
+    padding: 0;
+}
+.laptop {
+    width: 382px;
+}
+.tablet {
+    width: 213px;
+    top: 156px;
+    left: -10px;
+}
+.mobile {
+    width: 151px;
+    bottom: -25px;
+    left: 77px;
+  }
+  .person {
+    width: 409px;
+    border-radius: 18%;
+}
+}

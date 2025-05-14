@@ -1,0 +1,257 @@
+.sidebar {
+  width: 25%;
+  background-color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  height: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #eee;
+  animation: changeBackground 15s infinite;
+}
+
+.nav::-webkit-scrollbar {
+  width: 5px; /* عرض شريط التمرير */
+}
+
+.nav::-webkit-scrollbar-thumb {
+  background-color: #082150; /* لون شريط التمرير */
+  border-radius: 10px; /* حواف دائرية لشريط التمرير */
+}
+
+.nav::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* تغيير اللون عند المرور بالماوس */
+}
+
+.nav::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* لون الخلفية لشريط التمرير */
+  border-radius: 10px;
+}
+
+.logo {
+  width: 90%;
+  transform: translatex(-80px); /* بداية العنصر يكون مرفوعًا قليلًا */
+  animation: slidedown 1.5s forwards;
+
+}
+
+.socials {
+  margin-top: 10px;
+  display: flex;
+  gap: 22px;
+  font-size: 23px;
+  padding-left: 37%;
+}
+.socials a {
+  color: gray;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation-name: slideIn;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+/* تأخير كل أيقونة */
+.icon1 {
+  animation-delay: 0s;
+}
+
+.icon2 {
+  animation-delay: 0.5s;
+}
+
+.icon3 {
+  animation-delay: 1s;
+}
+
+.socials a:hover{
+  color:#082150;
+}
+
+.nav {
+  margin: 40px 0;
+  list-style: none;
+  padding-left: 16%;
+  overflow-y: auto; /* ✅ اسكرول هنا */
+  flex-grow: 1;
+  max-height: calc(100vh - 300px); /* ✅ حساب ارتفاع مناسب حسب مكونات الأعلى والأسفل */
+}
+
+.nav-link {
+  padding: 10px 0;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: 'Great Vibes', cursive;
+  line-height: 2;
+  transform: translateY(50px); /* بداية العنصر يكون مرفوعًا قليلًا */
+  animation: slideIn 5s forwards;
+}
+.nav-link i {
+  margin-right: 10px;
+}
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slidedown {
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+/* تخصيص مدة التأثير للعنصر */
+
+.nav-link:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.nav-link:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.nav-link:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.nav-link:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.nav-link:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.nav-link:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.nav-link:nth-child(7) {
+  animation-delay: 3s;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #14154b;
+  font-size: 30px;
+  font-weight: 900;
+}
+.nav-link:hover:not(.active) {
+  color: #082150;
+  text-decoration: none;
+}
+
+.footer {
+  font-size: 19px;
+  color:rgb(88, 88, 88);
+  padding-left: 15%;
+  margin-top: auto;
+  font-weight: 600;
+  font-family: 'Great Vibes', cursive;
+
+}
+
+.footer a{
+  color: #082150;
+  font-weight: bolder;
+  font-size: larger;
+  font-family: YAEEKFXsRzg-0;
+  text-decoration: none;
+}
+.footer a:hover{
+  color: #555;
+}
+/* زر الهامبرجر */
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #082150;
+  cursor: pointer;
+}
+
+/* في الشاشات الصغيرة والمتوسطة */
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+    font-size: 46px;
+
+  }
+
+  .sidebar {
+    width: fit-content;
+    max-width: 300px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+    width: 70%;
+  }
+  .socials {
+    padding-left: 21%;
+}
+.nav-link {
+    font-size: 20px;
+}
+.footer , .footer a {
+    font-size: 16px;
+    padding-left: 0;
+}
+.nav {
+    margin: 26px 0;
+}
+.nav-link:hover, .nav-link.active {
+    font-size: 26px;
+}
+}
+@media (max-width: 760px) {
+  .hamburger {
+    display: block;
+    font-size: 26px;
+
+  }
+
+  .sidebar {
+    width: fit-content;
+    max-width: 300px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+    width: 70%;
+  }
+  .socials {
+    padding-left: 21%;
+}
+.nav-link {
+    font-size: 20px;
+}
+.footer , .footer a {
+    font-size: 16px;
+    padding-left: 0;
+}
+.nav {
+    margin: 26px 0;
+}
+.nav-link:hover, .nav-link.active {
+    font-size: 26px;
+}
+}

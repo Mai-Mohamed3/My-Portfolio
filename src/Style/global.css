@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html, #root {
+    height: 100%;
+    overflow-x: hidden;
+
+  }
+  @font-face {
+    font-family: 'Kudofun';
+    src: url('/src/assets/Fonts/Kudofun Swash.ttf') format('truetype');
+
+  }
+
+  @font-face {
+    font-family: 'BelanieLovely';
+    src: url('/src/assets/Fonts/Belanie Lovely TTF Demo.ttf') format('truetype');
+  }

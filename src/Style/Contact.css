@@ -1,0 +1,219 @@
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-title {
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 0;
+  font-family: 'BelanieLovely', cursive;
+  -webkit-text-stroke: 1.5px #082150; /* لون البوردر */
+  color: white;
+}
+.stroked-text:hover {
+  transform: scale(1.2);
+  -webkit-text-stroke: 1px #cc23b0;
+}
+.contact-cta{
+  font-family: 'Great Vibes', cursive;
+  font-size: 32px;
+  color: #082150;
+  margin: 0;
+}
+
+.contact-info{
+  flex: 1;
+  min-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 40px;
+  font-family: 'Great Vibes', cursive;
+}
+.contact-info p {
+  color: #333;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.contact-info strong{
+  color: #082150;
+  font-weight: 800;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.contact-form button {
+  padding: 14px 27px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Great Vibes', cursive;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  transform: translatex(40px);
+  animation: slideDown 1s ease forwards;
+  background-color: #082150;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+/* تنسيق المربع */
+.message-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgb(174, 194, 230); /* ظل رمادي ناعم */
+  z-index: 1000;
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-weight: bolder;
+}
+
+.message-box p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.close-btn {
+  background-color: #082150;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #333;
+}
+  
+  /* General animation classes */
+.slide-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: slideDown 0.6s ease-out forwards;
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideLeft 0.6s ease-out forwards;
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: slideRight 0.6s ease-out forwards;
+}
+
+/* Keyframes */
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1s; }
+.delay-6 { animation-delay: 1.2s; }
+.delay-7 { animation-delay: 1.4s; }
+
+@media (max-width: 991px) {
+  .contact-cta {
+      font-size: 36px;
+  }
+  .contact-container {
+       padding: 0 70px;
+}
+.contact-info p {
+    font-size: 39px;
+}
+.contact-form input, .contact-form textarea {
+    font-size: 24px;
+}
+.contact-content {
+    margin: 30px 0;
+    flex-direction: column;
+
+}
+}
+
+@media (max-width: 730px) {
+  .contact-container .contact-title {
+      font-size: 58px;
+      padding-bottom: 5%;
+  }
+  .contact-container {
+        padding: 0;
+    }
+  .contact-cta {
+    font-size: 28px;
+  }
+  .contact-info {
+    gap: 41px;
+    margin-top: 0;
+  }
+  .contact-info p {
+    font-size: 24px;
+}
+.contact-form {
+    margin-bottom: 10%;
+}
+}

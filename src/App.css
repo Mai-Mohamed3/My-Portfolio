@@ -1,0 +1,33 @@
+@import './Style/variables.css';
+@import './Style/global.css';
+.body{
+    background-color: grey;
+        overflow-x: hidden; /* إخفاء التمرير الأفقي */
+}
+/* App.css */
+
+.container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+  }
+  
+  .main-content {
+    width: 75%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  @media (max-width: 1024px) {
+.main-content {
+    width: 100%;
+    padding: 0 12px;
+  }
+}
