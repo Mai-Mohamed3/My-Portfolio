@@ -19,3 +19,7 @@
     font-family: 'BelanieLovely';
     src: url('/src/assets/Fonts/Belanie Lovely TTF Demo.ttf') format('truetype');
   }
+   @font-face {
+    font-family: 'DancingScript';
+    src: url('/src/assets/Fonts/DancingScript-Bold.ttf') format('truetype');
+  }
