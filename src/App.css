@@ -4,9 +4,12 @@
     background-color: grey;
     overflow-x: hidden; 
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
     display: flex;
-    height: 100vh;
     font-family: Arial, sans-serif;
   }
   

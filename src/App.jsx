@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Sidebar from "./Pages/Sidebar";
 import About from "./Pages/AboutMe";
 import HeroSection from "./Pages/HeroSection";
@@ -11,12 +11,19 @@ import "./App.css";
 
 export default function App() {
   const [activeSection, setActiveSection] = useState("home");
+  const topRef = useRef(null); // ده العنصر اللي هنسكرول له
+
+  useEffect(() => {
+    if (topRef.current) {
+      topRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [activeSection]);
 
   return (
     <div className="container">
       <Sidebar active={activeSection} setActive={setActiveSection} />
       
-      <main className="main-content">
+      <main className="main-content" ref={topRef}>
         {activeSection === "home" && <HeroSection />}
         {activeSection === "about" && <About />}
         {activeSection === "Experience" && <Experience />}

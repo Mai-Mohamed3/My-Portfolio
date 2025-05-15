@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
+    <div id='contact' className="contact-container">
      <h2 className="contact-title slide-down delay-1">
         {"Contact Me".split("").map((char, index) => (
           <span key={index} className="stroked-text">

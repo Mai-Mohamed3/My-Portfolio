@@ -166,7 +166,7 @@ const handlePrev = () => {
   }, [isHovered]); // عندما يكون mouseHovered يتغير، يتوقف التمرير التلقائي
 
   return (
-    <section className="about-section website">
+    <section id='websites' className="about-section website">
       <div className="about-img slide-down">
         <h2 className="contact-title">
           {"Websites".split("").map((char, index) => (

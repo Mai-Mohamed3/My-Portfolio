@@ -30,7 +30,7 @@ const education = [
 
 const Education = () => {
   return (
-    <section className="education" id="education">
+    <section  className="education" id="education">
         <div className="about-img slide-down">
           <h2 className="contact-title">
           {"Education".split("").map((char, index) => (

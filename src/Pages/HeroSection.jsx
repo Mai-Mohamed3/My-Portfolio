@@ -29,7 +29,7 @@ const HeroSection = () => {
   
 
   return (
-    <section className="digital-section">
+    <section id="home" className="digital-section">
       <div className="content-wrapper">
         {/* Text Section */}
         <div className="text-section">
