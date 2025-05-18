@@ -2,13 +2,10 @@ import React, { useEffect, useState } from "react";
 import "../Style/HeroSection.css";
 import heroData from "./heroData";
 
-
-// React Component (HeroSection)
-const HeroSection = () => {
+const HeroSection = ({ setActiveSection }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animate, setAnimate] = useState(false);
   const [initialTextAnimation, setInitialTextAnimation] = useState(true);
-
 
   useEffect(() => {
     setAnimate(true);
@@ -26,24 +23,21 @@ const HeroSection = () => {
 
   const current = heroData[activeIndex];
 
-  
-
   return (
     <section id="home" className="digital-section">
       <div className="content-wrapper">
         {/* Text Section */}
         <div className="text-section">
-        <h2 className={`${animate ? "slide-down delay-4" : ""}`}>
-          {/* أول كلمة – كل حرف داخل span بborder */}
-          {current.title.split(" ")[0].split("").map((char, i) => (
-            <span className="highlight-letter" key={`highlight-${i}`}>
-              {char}
-            </span>
-          ))}{" "}
-          <br />
-          {/* باقي العنوان بعد أول كلمة */}
-          {current.title.split(" ").slice(1).join(" ")}
-        </h2>
+          <h2 className={`${animate ? "slide-down delay-4" : ""}`}>
+            {current.title.split(" ")[0].split("").map((char, i) => (
+              <span className="highlight-letter" key={`highlight-${i}`}>
+                {char}
+              </span>
+            ))}{" "}
+            <br />
+            {current.title.split(" ").slice(1).join(" ")}
+          </h2>
+
           <p className={`${animate ? "slide-left delay-5" : ""}`}>
             {current.desc}
           </p>
@@ -52,12 +46,7 @@ const HeroSection = () => {
             {current.buttons.map((btn, idx) => {
               if (btn === "Download CV") {
                 return (
-                  <a
-                    key={idx}
-                    href="/resume.pdf"
-                    download
-                    className="btn white"
-                  >
+                  <a key={idx} href="resume.pdf" download className="btn white">
                     {btn} &rarr;
                   </a>
                 );
@@ -68,7 +57,7 @@ const HeroSection = () => {
                   <button
                     key={idx}
                     className="btn red"
-                    onClick={() => setActiveSection("websites")}
+                    onClick={() => setActiveSection("Websites")}
                   >
                     {btn} &rarr;
                   </button>
@@ -88,14 +77,13 @@ const HeroSection = () => {
         <div className="image-section">
           {current.images.map((img, index) => (
             <img
-              key={`${img.className}-${activeIndex}`} 
+              key={`${img.className}-${activeIndex}`}
               src={img.src}
               alt={`slide-${index}`}
               className={`img ${img.className} ${animate ? `slide-up delay-${index + 1}` : ""}`}
             />
           ))}
         </div>
-
       </div>
     </section>
   );

@@ -24,7 +24,7 @@ export default function App() {
       <Sidebar active={activeSection} setActive={setActiveSection} />
       
       <main className="main-content" ref={topRef}>
-        {activeSection === "home" && <HeroSection />}
+        {activeSection === "home" && <HeroSection setActiveSection={setActiveSection} />}
         {activeSection === "about" && <About />}
         {activeSection === "Experience" && <Experience />}
         {activeSection === "Skills" && <Skills />}
