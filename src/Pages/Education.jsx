@@ -10,7 +10,7 @@ const education = [
   },
   {
     title: "Front-End React & UI/UX Developer",
-    company: "Freelance Yard Digital Egypt Pioneers Initiative DEPI",
+    company: "Digital Egypt Pioneers Initiative DEPI",
     job: "Internship - Hybrid",
     year: "Aug 2024 - May 2025",
   },
@@ -22,7 +22,7 @@ const education = [
   },
   {
     title: "Power Bi and SQL .",
-    company: "Information Technology InstitutePower",
+    company: "Information Technology Institute",
     job: "Internship - Remote",
     year: "Aug 2022 - Sep 2022",
   },
