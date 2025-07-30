@@ -11,6 +11,7 @@ import fittness from '../assets/Images/fittness.png'
 import landing from '../assets/Images/landing.png'
 import admin from '../assets/Images/admin.png'
 import aveda from '../assets/Images/aveda.png'
+import watch from '../assets/Images/2Watch.png'
 
 
 const data = [
@@ -93,7 +94,7 @@ const data = [
     image: aveda,
     link: "https://mai-mohamed3.github.io/Aveda-Ecommerce/",
     github:"https://github.com/Mai-Mohamed3/Aveda-Ecommerce",
-    date: "may 9, 2023"
+    date: "May 9, 2023"
   },
   {
     id: 10,
@@ -112,16 +113,16 @@ const data = [
     link: "https://mai-mohamed3.github.io/shop-Ecommerce/",
     github:"https://github.com/Mai-Mohamed3/shop-Ecommerce",
     date: "April 9, 2025"
-  }/* ,
+  },
   {
     id: 12,
-    title: "المدينة القديمة",
-    description: "تاريخ وحضارة",
-    image: "https://via.placeholder.com/300x200?text=Old+Town",
-    link: "https://example.com/old-town",
-    github:"",
-    date: "April 12, 2045"
-  } */
+    title: "Movies Plateform",
+    description: "A modern movie website with search, categories, and detailed movie info",
+    image: watch,
+    link: "https://mai-mohamed3.github.io/2Watch/",
+    github:"https://github.com/Mai-Mohamed3/2Watch",
+    date: "June 18, 2025"
+  }
 ];
 
 
