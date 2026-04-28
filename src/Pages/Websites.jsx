@@ -14,8 +14,6 @@ import aveda from '../assets/Images/aveda.png'
 import watch from '../assets/Images/2Watch.png'
 import moodi from '../assets/Images/moodi.png'
 
-
-
 const data = [
   {
     id: 1,
@@ -24,7 +22,7 @@ const data = [
     image: moodi,
     link: "https://mai-mohamed3.github.io/MoodiMealz/",
     github:"https://github.com/Mai-Mohamed3/MoodiMealz",
-    date: "May 7, 2025"
+    date: "Aug 20, 2025"
   },
   {
     id: 2,
