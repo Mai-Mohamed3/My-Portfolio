@@ -10,16 +10,16 @@
   font-weight: bold;
   margin-bottom: 0;
   font-family: 'BelanieLovely', cursive;
-  -webkit-text-stroke: 1.5px #082150; /* لون البوردر */
-  color: white;
+  -webkit-text-stroke: 1.5px var(--bg-color);
+  color: #e0d427;
 }
 .stroked-text:hover {
   transform: scale(1.2);
-  -webkit-text-stroke: 1px #cc23b0;
+  -webkit-text-stroke: 1px #fff67e;
 }
 .contact-cta{
   font-size: 32px;
-  color: #082150;
+  color: var(--primary-color);
   margin: 0;
 }
 
@@ -33,13 +33,13 @@
   margin-top: 40px;
 }
 .contact-info p {
-  color: #333;
+  color: var(--secondary-color);
   font-size: 25px;
   font-weight: 500;
 }
 
 .contact-info strong{
-  color: #082150;
+  color: var(--icon-color);
   font-weight: 800;
 }
 
@@ -62,7 +62,7 @@
 .contact-form input,
 .contact-form textarea {
   padding: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--secondary-color);
   border-radius: 6px;
   font-size: 18px;
 }
@@ -78,27 +78,26 @@
   transition: 0.3s ease;
   transform: translatex(40px);
   animation: slideDown 1s ease forwards;
-  background-color: #082150;
-  color: #ffffff;
+  background-color: var(--icon-color);
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
 .contact-form button:hover {
-  background-color: #333;
+  background-color: var(--hover-color);
   cursor: pointer;
   transform: translateY(-5px);
 }
-/* تنسيق المربع */
 .message-box {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: var(--secondary-color);
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--icon-color);
   border-radius: 10px;
-  box-shadow: 0 20px 40px rgb(174, 194, 230); /* ظل رمادي ناعم */
+  box-shadow: 0 20px 40px rgba(13, 133, 2, 0.829);
   z-index: 1000;
   text-align: center;
   font-weight: bolder;
@@ -107,12 +106,12 @@
 .message-box p {
   font-size: 18px;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--hover-color);
 }
 
 .close-btn {
-  background-color: #082150;
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--secondary-color);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -120,10 +119,9 @@
 }
 
 .close-btn:hover {
-  background-color: #333;
+  background-color: var(--hover-color);
 }
   
-  /* General animation classes */
 .slide-down {
   opacity: 0;
   transform: translateY(-30px);

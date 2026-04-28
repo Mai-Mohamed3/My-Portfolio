@@ -1,9 +1,10 @@
 :root {
-  --primary-color: #000;
-  --secondary-color: #999;
+  --primary-color: #fff67e;
+  --secondary-color: #fff;
   --hover-color: #555;
-  --bg-color: #f8f8f8;
-
+  --bg-color: #416d19;
+ --icon-color: #b4a904;
   --font-main: 'Segoe UI', sans-serif;
+  --black-color: #000;
 }
   

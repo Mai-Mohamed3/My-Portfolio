@@ -30,20 +30,20 @@
   
 .about-text h2 {
   font-size: 32px;
-  color: #14154b;
+  color: var(--primary-color);
   margin-bottom: 20px;
 }
 
 .about-text p {
   font-size: 25px;
-  color: #333;
+  color:var(--secondary-color);
   margin-bottom: 15px;
   line-height: 1.6;
   font-weight: 600;
 }
 
 .about-text span{
-  color: #14154b;
+  color: var(--primary-color);
   font-weight: 800;
 }
 
@@ -53,16 +53,15 @@
 }
   
 .about-socials i {
-  color: #14154b;
+  color: var(--primary-color);
   font-size: 30px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 .about-socials i:hover {
-  color: #565657;
+  color: var(--secondary-color);
   cursor: pointer;
   transform: translateY(-5px);
 }
-  /* أنميشن */
 @keyframes slideDown {
   0% {
     opacity: 0;
@@ -96,7 +95,6 @@
   }
 }
 
-/* تطبيق الأنميشن */
 .slide-down {
   animation: slideDown 1.8s ease-in-out;
 }

@@ -1,7 +1,7 @@
 import mobile from "../assets/Images/mobile.png";
 import tablet from "../assets/Images/tablet.png";
 import laptop from "../assets/Images/laptop.jpg";
-import heroImage2 from "../assets/Images/person.png";
+import heroImage2 from "../assets/Images/mypic2.png";
 
 const heroData = [
   {

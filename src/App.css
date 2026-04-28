@@ -13,13 +13,6 @@ html {
     font-family: Arial, sans-serif;
   }
   
-  .sidebar {
-    background-color: #f8f8f8;
-    padding: 20px;
-    box-sizing: border-box;
-    border-right: 1px solid #ddd;
-  }
-  
   .main-content {
     width: 75%;
     padding: 0 20px;

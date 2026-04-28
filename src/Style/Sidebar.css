@@ -1,6 +1,6 @@
 .sidebar {
   width: 25%;
-  background-color: white;
+  background-color: var(--secondary-color);
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
@@ -9,33 +9,39 @@
   position: fixed;
   left: 0;
   top: 0;
-  border-right: 1px solid #eee;
+  border-right: 1px solid var(--secondary-color);
   animation: changeBackground 15s infinite;
 }
 
 .nav::-webkit-scrollbar {
-  width: 5px; /* عرض شريط التمرير */
+  width: 5px; 
 }
 
 .nav::-webkit-scrollbar-thumb {
-  background-color: #082150; /* لون شريط التمرير */
-  border-radius: 10px; /* حواف دائرية لشريط التمرير */
+  background-color: var(--bg-color); 
+  border-radius: 10px;
 }
 
 .nav::-webkit-scrollbar-thumb:hover {
-  background-color: #555; /* تغيير اللون عند المرور بالماوس */
+  background-color: var( --hover-color);
 }
 
 .nav::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* لون الخلفية لشريط التمرير */
+  background-color: var(--secondary-color); 
   border-radius: 10px;
 }
 
 .logo {
-  width: 90%;
-  transform: translatex(-80px); /* بداية العنصر يكون مرفوعًا قليلًا */
+  width: 250px;
+  height: 250px;
+  transform: translatex(-80px);
   animation: slidedown 1.5s forwards;
-
+  align-self: center;
+  border-radius: 50%;
+  object-fit: cover;
+   object-position: top;
+   border: solid 2px var(--bg-color);
+    box-shadow: 0 0 15px rgba(32, 173, 3, 0.74);
 }
 
 .socials {
@@ -46,7 +52,7 @@
   padding-left: 37%;
 }
 .socials a {
-  color: gray;
+  color: var(--bg-color);
   opacity: 0;
   transform: translateY(-20px);
   animation-name: slideIn;
@@ -54,7 +60,6 @@
   animation-fill-mode: forwards;
 }
 
-/* تأخير كل أيقونة */
 .icon1 {
   animation-delay: 0s;
 }
@@ -68,27 +73,27 @@
 }
 
 .socials a:hover{
-  color:#082150;
+  color:var(--icon-color);
 }
 
 .nav {
   margin: 40px 0;
   list-style: none;
   padding-left: 16%;
-  overflow-y: auto; /* ✅ اسكرول هنا */
+  overflow-y: auto; 
   flex-grow: 1;
-  max-height: calc(100vh - 300px); /* ✅ حساب ارتفاع مناسب حسب مكونات الأعلى والأسفل */
+  max-height: calc(100vh - 300px);
 }
 
 .nav-link {
   padding: 10px 0;
-  color: #555;
+  color: var(--hover-color);
   cursor: pointer;
   transition: 0.3s;
   font-weight: 600;
   font-size: 25px;
   line-height: 2;
-  transform: translateY(50px); /* بداية العنصر يكون مرفوعًا قليلًا */
+  transform: translateY(50px);
   animation: slideIn 5s forwards;
 }
 .nav-link i {
@@ -106,8 +111,6 @@
     transform: translatex(0);
   }
 }
-
-/* تخصيص مدة التأثير للعنصر */
 
 .nav-link:nth-child(1) {
   animation-delay: 0s;
@@ -138,12 +141,12 @@
 }
 .nav-link:hover,
 .nav-link.active {
-  color: #14154b;
+  color: var(--bg-color);
   font-size: 30px;
   font-weight: 900;
 }
 .nav-link:hover:not(.active) {
-  color: #082150;
+  color: var(--bg-color);
   text-decoration: none;
 }
 
@@ -156,16 +159,15 @@
 }
 
 .footer a{
-  color: #082150;
+  color: var(--bg-color);
   font-weight: bolder;
   font-size: 30px;
   font-family: 'DancingScript';
   text-decoration: none;
 }
 .footer a:hover{
-  color: #555;
+  color: var(--hover-color);
 }
-/* زر الهامبرجر */
 .hamburger {
   display: none;
   position: fixed;
@@ -175,11 +177,10 @@
   background: none;
   border: none;
   font-size: 28px;
-  color: #082150;
+  color: var(--icon-color);
   cursor: pointer;
 }
 
-/* في الشاشات الصغيرة والمتوسطة */
 @media (max-width: 1024px) {
   .hamburger {
     display: block;
@@ -226,7 +227,10 @@
     font-size: 26px;
 
   }
-
+.logo{
+  width: 200px;
+  height: 200px;
+}
   .sidebar {
     width: fit-content;
     max-width: 300px;
@@ -237,7 +241,7 @@
 
   .sidebar.show {
     transform: translateX(0);
-    width: 70%;
+    width: 80%;
   }
   .socials {
     padding-left: 21%;

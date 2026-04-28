@@ -1,8 +1,7 @@
 .main-content {
   margin-left: 25%;
   padding: 0px ;
-  background-image: url('../assets/Images/bg.png'); 
-  background-color: rgba(128, 128, 128, 0.288); 
+  background-color: var(--bg-color); 
   background-repeat: no-repeat; 
   min-height: 100vh;
   width: 100%;
@@ -39,7 +38,7 @@
   width: 482px;
   position: relative;
   z-index: 1;
-  box-shadow: 0 20px 40px rgb(226, 223, 223); /* ظل رمادي ناعم */
+  box-shadow: 0 20px 40px rgba(155, 155, 155, 0.616); 
 }
 
 .tablet {
@@ -48,7 +47,7 @@
   top: 175px;
   left: 20px;
   z-index: 2;
-  box-shadow: 0 20px 40px rgb(223, 220, 220); /* ظل رمادي ناعم */
+  box-shadow: 0 20px 40px rgba(163, 163, 163, 0.74); 
 }
 
 .mobile {
@@ -60,9 +59,9 @@
 }
 
 .person{
-  width: 550px;
+  width: 450px;
   position: relative;
-  border-radius: 30%;  
+  border-radius: 20%;  
 }
 
 .text-section {
@@ -72,7 +71,7 @@
 
 .text-section h2 {
   font-size: 61px;
-  color: #082150;
+  color: var(--primary-color);
   margin-bottom: 20px;
   margin-top: 0;
   font-family: 'Great Vibes', cursive;
@@ -81,8 +80,7 @@
   font-size: 48px;
   font-weight: bold;
   color: transparent;
-  -webkit-text-stroke: 1px #082150; /* بوردر حوالين الحرف */
-  font-family: 'BelanieLovely', cursive;
+  -webkit-text-stroke: 1px var(--bg-color); 
   display: inline-block;
   margin: 0 2px;
   transition: transform 0.3s ease;
@@ -90,16 +88,16 @@
 
 .highlight-letter:hover {
   transform: scale(1.2);
-  -webkit-text-stroke: 1px #cc23b0;
+  -webkit-text-stroke: 1px var(--primary-color);
 }
 
 
 .text-section h2 span {
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 .text-section p {
-  color: #686767;
+  color: var(--secondary-color);
   font-size: 26px;
   margin-bottom: 30px;
   line-height: 1.6;
@@ -112,8 +110,8 @@
 
 .btn {
   padding: 14px 37px;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 17px;
+  font-weight: bolder;
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -124,22 +122,21 @@
 }
 
 .btn.white {
-  background-color: #082150;
-  color: #ffffff;
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
   text-decoration: none;
 }
 
 .btn.red {
-  background-color: #082150;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
 }
 
 .btn:hover {
   opacity: 0.8;
-  background-color: #07358a;
+  background-color: var(--primary-color);
 }
 
-/* حركة الصور من أسفل إلى أعلى */
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -151,7 +148,6 @@
   }
 }
 
-/* تطبيق الأنيميشن على الصور */
 .img {
   opacity: 0;
   transform: translateY(40px);
@@ -160,7 +156,7 @@
 
 .laptop {
   animation: slideUp 1s ease forwards;
-  animation-delay: 0s; /* ابتداءً من الآن */
+  animation-delay: 0s; 
 }
 
 .tablet {
@@ -172,11 +168,9 @@
 }
 
 
-/* التأخير على الزر */
 .delay-6 {
-  animation-delay: 2.5s; /* تأخير زر العرض */
+  animation-delay: 2.5s; 
 }
-/* تأخير الأنيميشن حسب ترتيب الصور */
 .delay-1 {
   animation-delay: 0.5s;
 }

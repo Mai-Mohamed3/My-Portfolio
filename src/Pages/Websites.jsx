@@ -12,20 +12,31 @@ import landing from '../assets/Images/landing.png'
 import admin from '../assets/Images/admin.png'
 import aveda from '../assets/Images/aveda.png'
 import watch from '../assets/Images/2Watch.png'
+import moodi from '../assets/Images/moodi.png'
+
 
 
 const data = [
   {
     id: 1,
-    title: "Zoome Website",
-    description: "Zoome Advertising is startup company established in 2024",
-    image: zoome,
-    link: "https://www.zoome-adv.com/",
-    github:"https://github.com/Mai-Mohamed3/Zoome-Website",
+    title: "MoodiMealz Restaurant",
+    description: "Developed a restaurant web app with API integration, filtering, cart, and 3D animations.",
+    image: moodi,
+    link: "https://mai-mohamed3.github.io/MoodiMealz/",
+    github:"https://github.com/Mai-Mohamed3/MoodiMealz",
     date: "May 7, 2025"
   },
   {
     id: 2,
+    title: "Zoome Website",
+    description: "Zoome Advertising is startup company established in 2024",
+    image: zoome,
+    link: "https://mai-mohamed3.github.io/Zoome-Website/",
+    github:"https://github.com/Mai-Mohamed3/Zoome-Website",
+    date: "May 7, 2025"
+  },
+  {
+    id: 3,
     title: "Personal Portfolio",
     description: "Senior Data Quality , Senior Instractor & Data Analyst Freelancer",
     image: semsem,
@@ -34,7 +45,7 @@ const data = [
     date: "Mar 15, 2025"
   },
   {
-    id: 3,
+    id: 4,
     title: "Personal Portfolio",
     description: "Embedded Software Developer , web developer & Freelancer",
     image: beba,
@@ -43,7 +54,7 @@ const data = [
     date: "April 3, 2045"
   },
   {
-    id: 4,
+    id: 5,
     title: " Amado",
     description: "The E-commerce Shopping Clothes Website is a user-friendly platform offering a seamlessshopping ",
     image:amado,
@@ -52,7 +63,7 @@ const data = [
     date: "Jun 12, 2025"
   },
   {
-    id: 5,
+    id: 6,
     title: "Lavida",
     description: "A user-friendly Online Supermarket Website with categorized products",
     image:lavida,
@@ -61,7 +72,7 @@ const data = [
     date: "Des 10, 2024"
   },
   {
-    id: 6,
+    id: 7,
     title: "VegFood",
     description: "The Online Food Website is a user-friendly platform offering a variety of food items ",
     image:veg,
@@ -70,7 +81,7 @@ const data = [
     date: "Des 20, 2024"
   },
   {
-    id: 7,
+    id: 13,
     title: "Imitation Of El-Youm7",
     description: "elyoum7The News Website Clone, inspired by Youm7",
     image: elyoum7,

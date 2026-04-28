@@ -3,16 +3,25 @@ import "../Style/Experience.css";
 
 const education = [
   {
+    title: "Web Designer",
+    company: "National Telecommunication Institute (NTI)",
+    job: "Internship - Hybrid",
+    year: "Jul 2025 - Sep 2025",
+    certificate:"https://www.linkedin.com/in/mai-mohamed-developer/overlay/Position/2722581896/treasury/?profileId=ACoAAFV9QeABkf73PpGxzwMzz5PcTPWjMxSp87M",
+  },
+  {
     title: "Front-End React Developer",
     company: "Google Developer Groups on Campus: CIC",
     job: "Internship - Hybrid",
-    year: "Mar 2025 - Present",
+    year: "Mar 2025 - Aug 2025",
+    certificate:"https://www.linkedin.com/in/mai-mohamed-developer/overlay/Position/2598551169/treasury?profileId=ACoAAFV9QeABkf73PpGxzwMzz5PcTPWjMxSp87M",
   },
   {
     title: "Front-End React & UI/UX Developer",
     company: "Digital Egypt Pioneers Initiative DEPI",
     job: "Internship - Hybrid",
     year: "Aug 2024 - May 2025",
+    certificate:"https://www.linkedin.com/in/mai-mohamed-developer/overlay/Position/2561982508/treasury?profileId=ACoAAFV9QeABkf73PpGxzwMzz5PcTPWjMxSp87M",
   },
   {
     title: "Bachelor of Computer & Artificial Intelligence",
@@ -50,6 +59,16 @@ const Education = () => {
                 <h3 className="title">{exp.title}</h3>
                 <p className="company">{exp.company}</p>
                 <p className="job">{exp.job}</p>
+                {exp.certificate && (
+                  <a
+                    href={exp.certificate}
+                    className="certificate"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Certificate
+                  </a>
+                )}
               </div>
             </div>
           </div>

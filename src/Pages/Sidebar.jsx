@@ -1,21 +1,19 @@
 import { useState } from 'react';
 import '../Style/Sidebar.css';
-import logo from '../assets/Images/logo6.png';
+import logo from '../assets/Images/mypic.jpeg';
 
 function Sidebar({ active, setActive }) {
-  const [isOpen, setIsOpen] = useState(false); // لإظهار/إخفاء السايدبار
+  const [isOpen, setIsOpen] = useState(false);
 
-  const links = ["home", "about", "Experience", "Skills", "Education", "Websites", "Contact"];
-  const icons = ["fas fa-home", "fas fa-user", "fas fa-briefcase", "fas fa-cogs", "fas fa-graduation-cap", "fas fa-laptop-code", "fas fa-envelope"];
+  const links = ["home", "about", "Experience","Highlights", "Skills", "Education", "Websites", "Contact"];
+  const icons = ["fas fa-home", "fas fa-user", "fas fa-briefcase","fa-solid fa-diagram-project", "fas fa-cogs", "fas fa-graduation-cap", "fas fa-laptop-code", "fas fa-envelope"];
 
   return (
     <>
-      {/* زر الهامبرجر */}
       <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         <i className="fas fa-bars"></i>
       </button>
 
-      {/* Sidebar */}
       <aside className={`sidebar ${isOpen ? 'show' : ''}`}>
         <img className="logo" src={logo} alt="logo error" />
         <div className="socials">
@@ -36,7 +34,7 @@ function Sidebar({ active, setActive }) {
               className={`nav-link ${active === link ? "active" : ""}`}
               onClick={() => {
                 setActive(link);
-                setIsOpen(false); // اغلاق السايدبار بعد الضغط
+                setIsOpen(false); 
               }}
               style={{ animationDelay: `${index * 0.2}s` }}
             >

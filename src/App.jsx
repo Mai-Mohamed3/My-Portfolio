@@ -3,6 +3,7 @@ import Sidebar from "./Pages/Sidebar";
 import About from "./Pages/AboutMe";
 import HeroSection from "./Pages/HeroSection";
 import Experience from "./Pages/Experience";
+import StatsSection from "./Pages/StatsSection";
 import Skills from "./Pages/Skills";
 import Education from "./Pages/Education";
 import Websites from "./Pages/Websites";
@@ -11,7 +12,7 @@ import "./App.css";
 
 export default function App() {
   const [activeSection, setActiveSection] = useState("home");
-  const topRef = useRef(null); // ده العنصر اللي هنسكرول له
+  const topRef = useRef(null); 
 
   useEffect(() => {
     if (topRef.current) {
@@ -26,6 +27,7 @@ export default function App() {
       <main className="main-content" ref={topRef}>
         {activeSection === "home" && <HeroSection setActiveSection={setActiveSection} />}
         {activeSection === "about" && <About />}
+        {activeSection === "Highlights" && <StatsSection />}
         {activeSection === "Experience" && <Experience />}
         {activeSection === "Skills" && <Skills />}
         {activeSection === "Education" && <Education />}
